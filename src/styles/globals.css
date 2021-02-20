@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+  font-family: "Roboto", sans-serif !important;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+  padding-top: 56px;
+}
+
+footer .list-group .list-group-item {
+  padding: 0;
+  border: 0;
+}
+
+.text-truncate-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.text-truncate-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.movie-poster {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.min-height-340 {
+  min-height: 440px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 0 !important;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.min-height-340 .card-body {
+  padding: 0;
+}
+.min-height-340 .card-body:hover .data {
+  transform: translateY(0);
+}
+.min-height-340 .card-body .data {
+  height: calc(188px + 2.5rem);
+  padding: 1.25rem;
+  width: 100%;
+  background-color: rgb(255 255 255 / 95%);
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(95px + 2rem));
+  transition: transform 0.3s;
+  /* border: 1px solid rgba(0,0,0,.125); */
+}
