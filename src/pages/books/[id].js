@@ -52,7 +52,7 @@ export default function Home({ book, books }) {
                             </div>
                         </div>
                         <div className="text-center mt-4">
-                            <a className="btn btn-lg btn-light" href={`/books/${book._id}`}>Download</a>
+                            <a className="btn btn-lg btn-light" href={`/books/${book._id}`}><i className="bi bi-cloud-download"></i> Download</a>
                         </div>
                     </Col>
                 </Row>
