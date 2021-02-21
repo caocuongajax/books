@@ -20,7 +20,32 @@ body {
 .bg-light-2 {
   background-color: #f2f6fc !important;
 }
-
+.svg-border-waves {
+  padding-top: 1rem;
+}
+.svg-border-waves svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2rem;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .svg-border-waves {
+    padding-top: 1.5rem;
+  }
+  .svg-border-waves svg {
+      height: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .svg-border-waves {
+    padding-top: 2rem;
+  }
+  .svg-border-waves svg {
+      height: 3rem;
+  }
+}
 .svg-border-rounded.text-light-2 {
   position: relative;
 }
@@ -51,6 +76,9 @@ body {
   .svg-border-rounded svg {
       height: 3rem;
   }
+}
+.page-header-text {
+  color: rgba(255, 255, 255, 0.7);
 }
 .book-cover {
   /* transform-style: preserve-3d;
@@ -100,11 +128,15 @@ body {
   -o-transform: rotateY(-4deg) translateZ(0px);
   -ms-transform: rotateY(-4deg) translateZ(0px);
   transform: rotateY(-4deg) translateZ(0px);
+  border: 3px solid #fff;
+  padding: 0.25rem;
+  background: #fff;
 }
 
 .libro:before, .libro:after {
 content: '';
 position: absolute;
+border: 3px solid #fff;
 }
 
 .libro:before {
@@ -120,6 +152,7 @@ position: absolute;
   -o-transform: rotateY(-4deg) translateZ(0px);    
   -ms-transform: rotateY(-4deg) translateZ(0px);
   transform: rotateY(-4deg) translateZ(0px);
+  border-radius: .25rem!important;
 }
 .libro:after {
   background: #F5F5F5;
@@ -248,4 +281,10 @@ footer .list-group .list-group-item {
   transform: translateY(calc(95px + 2rem));
   transition: transform 0.3s;
   /* border: 1px solid rgba(0,0,0,.125); */
+}
+
+.bg-gradient-primary-to-secondary {
+  background-color: #0061f2;
+  background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%);
+  position: relative;
 }
